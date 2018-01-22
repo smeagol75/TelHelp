@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_padding"
+    android:paddingLeft="@dimen/general_padding"
+    android:paddingRight="@dimen/general_padding"
+    android:paddingTop="@dimen/row_padding">
+
+    <ImageView
+        android:id="@+id/imagenFila_plantilla"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@android:color/transparent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/titleTextViewPlantilla"
+        style="@style/RowTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingStart="@dimen/row_padding"
+        android:paddingEnd="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imagenFila_plantilla"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/subtitleTextView"
+        style="@style/RowSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:paddingStart="@dimen/row_padding"
+        android:paddingEnd="@dimen/row_padding"
+        android:layout_below="@+id/titleTextViewPlantilla"
+        android:layout_alignStart="@+id/titleTextViewPlantilla" />
+
+</RelativeLayout>

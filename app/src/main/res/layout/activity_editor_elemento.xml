@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="smg75.hcv.com.telhelp.editor.EditorElemento">
+
+    <ImageView
+        android:id="@+id/imageViewElemento"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="415dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription=""
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495"
+        app:srcCompat="@drawable/fondo"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/nombreElemento"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/ad_elemento"
+        android:text="@string/ad_elemento"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonGrabarParar"
+        style="@style/estilo_botones_elementos"
+
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginRight="108dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="clickGrabar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301"
+        app:srcCompat="@android:drawable/ic_btn_speak_now"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/imageButtonElementoPlay"
+        style="@style/estilo_botones_elementos"
+
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="onClickPlay"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonGaleria"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonGrabarParar"
+        app:layout_constraintLeft_toLeftOf="@+id/imageButtonGrabarParar"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonGaleria"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_media_play"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/estilo_botones_elementos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="grabarElemento"
+        android:text="@string/btn_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewElemento"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCamara"
+        style="@style/estilo_botones_elementos"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickCamara"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonGrabarParar"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewElemento"
+        app:layout_constraintRight_toLeftOf="@+id/imageButtonGrabarParar"
+        app:layout_constraintTop_toTopOf="@+id/imageViewElemento"
+        app:layout_constraintVertical_bias="0.533"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButtonGaleria"
+        style="@style/estilo_botones_elementos"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="ClickGaleria"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewElemento"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewElemento"
+        app:layout_constraintRight_toLeftOf="@+id/imageButtonElementoPlay"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@style/estilo_botones_elementos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/girar_imagen"
+        android:onClick="girarImagen"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewElemento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
+        app:srcCompat="@android:drawable/ic_menu_rotate" />
+
+</android.support.constraint.ConstraintLayout>

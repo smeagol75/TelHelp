@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TelHelp</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="txt_verbos">Verbos</string>
+    <string name="txt_vocabulario">Vocabulario</string>
+    <string name="txt_acciones">Acciones</string>
+    <string name="txt_preposiciones">Preposiciones</string>
+
+    <string name="title_activity_selector">Selector</string>
+    <string name="info_texto">tipo juego</string>
+    <string name="empezar_juego">Iniciar Juego</string>
+    <string name="repetir_sonido">Repetir sonido a buscar</string>
+    <string name="title_activity_plantilla_juego">PlantillaJuego</string>
+    <string name="titulo_add_String">Escribe el nombre del Juego</string>
+    <string name="agregar_sonido">Pulse para agregar sonido</string>
+    <string name="ad_elemento">Nombre del elemento</string>
+    <string name="btn_add">Añadir elemento</string>
+    <string name="girar_imagen">Girar imagen</string>
+    <string name="add_Juego">Añadir Juego</string>
+</resources>
